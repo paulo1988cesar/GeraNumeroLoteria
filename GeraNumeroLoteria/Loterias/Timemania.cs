@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 
 namespace GeraNumeroLoteria.Loterias
 {
-    public class LotoFacil : BaseLoteria
+    public class Timemania : BaseLoteria
     {
-        public override void GeraNumeros()
+        public override short GeraNumeroDelimitado(int min, int max, List<short> numerosGerados)
         {
             throw new NotImplementedException();
         }
 
-        public override short GeraNumeroDelimitado(int min, int max, List<short> numerosGerados)
+        public override void GeraNumeros()
         {
             throw new NotImplementedException();
         }
