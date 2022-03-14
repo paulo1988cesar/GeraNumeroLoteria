@@ -1,9 +1,4 @@
 ﻿using GeraNumeroLoteria.AbstractLoteria;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using static GeraNumeroLoteria.Enumeradores.Enumeradores;
 
 namespace GeraNumeroLoteria.Loterias
@@ -14,10 +9,18 @@ namespace GeraNumeroLoteria.Loterias
         {
             switch (tipo)
             {
-                case (short)TipoLoteria.MegaSena:
-                    return new MegaSena();
+                case (short)TipoLoteria.DiaSorte:
+                    return new DiaSorte();
                 case (short)TipoLoteria.LotoFacil:
                     return new LotoFacil();
+                case (short)TipoLoteria.Lotomania:
+                    return new Lotomania();
+                case (short)TipoLoteria.MegaSena:
+                    return new MegaSena();
+                case (short)TipoLoteria.Quina:
+                    return new Quina();
+                case (short)TipoLoteria.Timemania:
+                    return new Timemania();
                 default:
                     break;
             }
